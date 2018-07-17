@@ -6,9 +6,9 @@ def reformat_languages(languages)
       hash.each do |langauge, type|
         if new_hash[langauge] == nil
           new_hash[langauge] = type
-          new_hash[langauge][:style] = [styles]
+          new_hash[langauge][:styles] = [styles]
         else
-          new_hash[langauge][:style].push(styles)
+          new_hash[langauge][:styles].push(styles)
         end
       end
     end
