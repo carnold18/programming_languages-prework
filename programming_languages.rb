@@ -6,7 +6,7 @@ def reformat_languages(languages)
           new_hash[langauge] = type
           new_hash[langauge][:style] = [style]
         else
-          new_hash[langauge][:style].push(style)
+          new_hash[langauge][:style] << style
         end
       end
     end
